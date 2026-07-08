@@ -44,4 +44,10 @@ Usar o Claude in Chrome:
 
 ## Verificação (sempre)
 
-Após o upload, buscar `https://[dominio]/[pastaBase]/[slug]/` e con
+Após o upload, buscar `https://[dominio]/[pastaBase]/[slug]/` e confirmar HTTP 200 + conteúdo correto (título do cliente presente). Se 404, checar: propagação, caminho da pasta, permissões (644 para arquivos, 755 para pastas).
+
+## Organização
+
+- 1 pasta por cliente, slug em kebab-case sem acentos (ex.: `jessica-nutri`).
+- Nunca sobrescrever a pasta de outro cliente.
+- Página de teste do setup: `public_html/[pastaBase]/teste/index.html` com um "Funcionou!" simples.
